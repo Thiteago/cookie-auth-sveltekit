@@ -3,7 +3,6 @@ import { redirect } from '@sveltejs/kit'
 
 export const actions = {
   default: async ({ cookies, request, fetch}) => {
-    console.log('oi')
     const data = await request.formData()
     const email = data.get('email')
     const password = data.get('password')
